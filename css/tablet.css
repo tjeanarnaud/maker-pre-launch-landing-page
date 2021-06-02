@@ -1,3 +1,70 @@
-/* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+/* Tablets */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  /* Header */
+
+  /* Hero */
+  #hero {
+    width: 1108px !important;
+    height: 357px !important;
+  }
+
+  #hero-content {
+    max-width: 457px !important;
+  }
+
+  #hero-content h1 {
+    padding: 0 3rem !important;
+    margin-bottom: 1.5rem;
+  }
+
+  #hero-content p {
+    margin-bottom: 2.5rem !important;
+  }
+
+  /* Features */
+  #features {
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    max-width: 573px !important;
+  }
+
+  .feature {
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 515px !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .feature:nth-of-type(even) {
+    align-self: flex-start !important;
+  }
+
+  .feature-content {
+    width: 340px !important;
+  }
+
+  /* Pricing */
+  #pricing {
+    max-width: 573px;
+  }
+
+  #pricing-intro {
+    margin-bottom: 5rem;
+  }
+
+  #pricing-plan-free,
+  #pricing-plan-paid {
+    margin: 0 auto;
+  }
+
+  #pricing-plan-free {
+    margin-bottom: 4rem !important;
+  }
+
+  /* Footer */
+  #footer form {
+    max-width: 476px;
+    margin: 0 auto;
+  }
 }

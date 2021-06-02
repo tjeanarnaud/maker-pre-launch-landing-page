@@ -1,18 +1,110 @@
-/* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  /* Styles! */
-
-  #wrapper {
-    width: 375px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 20px;
+/* Mobiles */
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+  #header {
+    justify-content: center !important;
   }
 
-  img#hero-mobile {
-    width: 410px;
-    height: 233px;
-    visibility: visible;
+  #hero,
+  #features,
+  #pricing,
+  #footer {
+    margin-bottom: 6rem !important;
+  }
+
+  #hero-content,
+  #features,
+  #pricing,
+  #footer {
+    padding: 0 1.5rem !important;
+  }
+
+  #hero {
+    flex-direction: column !important;
+  }
+
+  #hero-image-mobile {
+    display: block !important;
+    min-width: 410px !important;
+    margin-bottom: 1rem;
+  }
+
+  #hero-cover-left,
+  #hero-cover-right {
+    display: none !important;
+  }
+
+  #hero-content h1 {
+    padding: 0 2.6rem !important;
+  }
+
+  #hero-content > p {
+    margin-bottom: 2rem;
+  }
+
+  /* Features */
+  #features {
+    flex-direction: column !important;
+  }
+  .feature {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin-bottom: 2.5rem !important;
+  }
+
+  .feature:last-child {
+    margin-bottom: 0;
+  }
+
+  .feature-image {
+    margin-bottom: 0.6rem !important;
+  }
+
+  /* Pricing */
+  #pricing-plan-free,
+  #pricing-plan-paid {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  #pricing-plan-free {
+    padding-top: 2rem !important;
+    margin-bottom: 4rem !important;
+  }
+
+  #pricing-plan-paid {
+    padding-top: 3rem !important;
+  }
+
+  #icon-free {
+    margin-top: calc(-75px + 23px) !important;
+  }
+
+  #icon-paid {
+    margin-top: calc(-110px + 32px) !important;
+  }
+
+  /* Footer */
+  #footer {
+    margin-top: 6rem !important;
+  }
+
+  #footer h2 {
+    text-align: center;
+    padding: 0 2.7rem;
+  }
+
+  #footer form {
+    flex-direction: column !important;
+  }
+
+  #footer input {
+    flex: none !important;
+  }
+
+  #footer button {
+    margin-left: 0 !important;
   }
 }

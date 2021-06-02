@@ -2,80 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-  <title>Maker pre-launch landing page | Frontend Mentor</title>
+  <title>Maker pre-launch landing page | Frontend Mento</title>
 </head>
 <body>
-  
-  <div id="wrapper">
-    <header>
-      <img src="./assets/logo.svg" alt="Logo">
-    </header>
 
-    <section id="hero">
-      <img src="./assets/illustration-hero-left.svg" alt="Illustration">
+  <div id="wrapper">
+    <div id="header">
+        <img src="./assets/logo.svg" />
+    </div>
+  
+    <div id="hero">
+      <div id="hero-image-mobile">
+        <img src="./assets/illustration-hero-mobile.png" alt="" />
+      </div>
+      
+      <div id="hero-cover-left">
+        <img src="./assets/illustration-hero-left.svg" alt="Illustration">
+      </div>
+      
       <div id="hero-content">
         <h1>Get paid for the work you <span>love</span> to do.</h1>
-        <p>The 9-5 grind is so last century. We believe in living life on your 
-    own terms. Whether you’re looking to escape the rat race or set up 
-      a side hustle, we’ve got you covered.</p>
+        <p>The 9-5 grind is so last century. We believe in living life on your
+          own terms. Whether you’re looking to escape the rat race or set up
+          a side hustle, we’ve got you covered.</p>
         <img id="hero-button" src="./assets/icon-scroll.svg" alt="Scroll Icon">
       </div>
-      <img src="./assets/illustration-hero-right.svg" alt="Illustration">
-    </section>
-
-    <section id="features">
+      
+      <div id="hero-cover-right">
+        <img src="./assets/illustration-hero-right.svg" alt="Illustration">
+      </div>
+    </div>
+    
+    <div id="features">
       <div class="feature">
-        <div class="image">
+        <div class="feature-image">
           <img src="./assets/illustration-passions.svg" alt="Passions">
         </div>
-        <h3>Indulge your passions</h3>
-        <p>Your passions shouldn't be just for the weekend. Earn a living doing what you love.</p>
-      </div>
-
-      <div class="feature">
-        <div class="image">
-          <img src="./assets/illustration-financial-freedom.svg" alt="Financial 
-        Freedom">
+        <div class="feature-content">
+          <h3>Indulge your passions</h3>
+          <p>Your passions shouldn't be just for the weekend. Earn a living doing what you love.</p>
         </div>
-        <h3>Gain financial freedom</h3>
-        <p>Start making money work for you. There’s nothing quite like earning while you sleep.</p>
-      </div>
-
-      <div class="feature">
-        <div class="image">
-          <img src="./assets/illustration-lifestyle.svg" alt="Lifestyle">
-        </div>
-        <h3>Choose your lifestyle</h3>
-        <p>Own your daily schedule. Fancy a lie-in? Go for it! Take charge of your week.</p>
       </div>
       
       <div class="feature">
-        <div class="image">
+        <div class="feature-image">
+          <img src="./assets/illustration-financial-freedom.svg" alt="Financial 
+              Freedom">
+        </div>
+        <div class="feature-content">
+          <h3>Gain financial freedom</h3>
+          <p>Start making money work for you. There’s nothing quite like earning while you sleep.</p>
+        </div>
+      </div>
+      
+      <div class="feature">
+        <div class="feature-image">
+          <img src="./assets/illustration-lifestyle.svg" alt="Lifestyle">
+        </div>
+        <div class="feature-content">
+          <h3>Choose your lifestyle</h3>
+          <p>Own your daily schedule. Fancy a lie-in? Go for it! Take charge of your week.</p>
+        </div>
+      </div>
+      
+      <div class="feature">
+        <div class="feature-image">
           <img src="./assets/illustration-work-anywhere.svg" alt="Work Anywhere">
         </div>
-        <h3>Work from anywhere</h3>
-        <p>Selling online means not being pinned down. Want to work AND travel? Go for it!</p>
+        <div class="feature-content">
+          <h3>Work from anywhere</h3>
+          <p>Selling online means not being pinned down. Want to work AND travel? Go for it!</p>
+        </div>
       </div>
-    </section>
-
-    <section id="pricing">
+    </div>
+    
+    <div id="pricing">
       <div id="pricing-intro">
         <h2>Our pricing plans</h2>
         <p>We only make money when our creators make money. Our plans are always affordable, and it’s completely free to get
           started.</p>
       </div>
-      
+    
       <div id="pricing-plans">
-        <div class="free plan">
-          <img class="plan-icon-free" src="./assets/icon-free.svg" alt="Icon Free">
+        <div id="pricing-plan-free">
+          <img id="icon-free" src="./assets/icon-free.svg" alt="Icon Free">
           <h3>Dip your toe</h3>
           <p>Just getting started? No problem at all! Our free plan will take you a long way.</p>
           <div class="price">Free</div>
@@ -94,9 +109,9 @@
             </dt>
           </dl>
         </div>
-        
-        <div class="paid plan">
-          <img class="plan-icon-paid" src="./assets/icon-paid.svg" alt="Icon Paid">
+    
+        <div id="pricing-plan-paid">
+          <img id="icon-paid" src="./assets/icon-paid.svg" alt="Icon Paid">
           <h3>Dive right in</h3>
           <p>Ready for the big time? Our paid plan will help you take your business to the next level.</p>
           <div class="price">$25.00 <span>/month</span></div>
@@ -120,21 +135,17 @@
           </dl>
         </div>
       </div>
-    </section>
-
-    <section id="notification">
+    </div>
+  
+    <div id="footer">
       <h2>Get notified when we launch</h2>
+      
       <form action="#">
-        <!-- <div class="input-field"> -->
-          <input type="text" placeholder="Email address" required>
-        <!-- </div> -->
+        <input type="text" placeholder="Email address" required>
         <button type="submit">Get notified</button>
       </form>
-    </section>  
+    </div>
 
-    <footer>
-        &copy; copyright 2021 - Made by <span>Jean Arnaud Tanoe</span>
-    </footer>
   </div>
 
 </body>

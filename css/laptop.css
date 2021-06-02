@@ -1,0 +1,86 @@
+/* Laptop */
+@media screen and (min-device-width: 1025px) and (max-device-width: 2200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  /* Base */
+  h1 {
+    font-size: 48px !important;
+  }
+
+  h2 {
+    font-size: 32px !important;
+  }
+
+  #hero {
+    max-width: 1600px;
+  }
+
+  /* Hero */
+  #hero {
+    width: 1553px;
+    height: 459px;
+  }
+
+  #hero-content p {
+    margin-bottom: 3rem;
+  }
+
+  /* Features */
+  #features {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1110px;
+    height: 383px;
+  }
+
+  .feature {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 255px;
+  }
+
+  .feature:nth-of-type(even) {
+    align-self: flex-end;
+  }
+
+  .feature-image {
+    width: 160px !important;
+    height: 164px !important;
+    margin-bottom: 2.6rem;
+  }
+
+  .feature-image > img {
+    height: 85px;
+  }
+
+  /* Pricing */
+  #pricing {
+    max-width: 920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #pricing-intro {
+    max-width: 540px;
+  }
+
+  #pricing-plans {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Footer */
+  #footer {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #footer form {
+    width: 476px;
+  }
+}
